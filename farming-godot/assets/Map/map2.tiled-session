@@ -1,0 +1,118 @@
+{
+    "activeFile": "map2.tmx",
+    "expandedProjectPaths": [
+        "Tiles",
+        "."
+    ],
+    "fileStates": {
+        "Fence's copiar.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 8
+        },
+        "House.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 1
+        },
+        "Interior.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 8
+        },
+        "Maple Tree.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 8
+        },
+        "Road copiar.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 8
+        },
+        "Spring Crops.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 8
+        },
+        "Tiles/Fence's copiar.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tiles/House.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tiles/Interior.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tiles/Maple Tree.tsx": {
+            "scaleInDock": 4,
+            "scaleInEditor": 5.5
+        },
+        "Tiles/Road copiar.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tiles/Spring Crops.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tiles/chest.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tiles/farmrpg.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 1
+        },
+        "chest.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "farmrpg.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 8
+        },
+        "map2.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 1578.3636363636365,
+                "y": 1874.1818181818182
+            }
+        }
+    },
+    "last.exportedFilePath": "C:/Users/macke/GIT CLONE/farming/farming-pygame/dat/farmrpg assets",
+    "last.imagePath": "C:/Users/macke/GIT CLONE/farming/farming-pygame/dat/farmrpg assets/Farm RPG FREE 16x16 - Tiny Asset Pack/Objects",
+    "map.height": 200,
+    "map.lastUsedExportFilter": "All Files (*)",
+    "map.lastUsedFormat": "tmx",
+    "map.width": 200,
+    "openFiles": [
+        "map2.tmx",
+        "Tiles/chest.tsx",
+        "Tiles/farmrpg.tsx",
+        "Tiles/Fence's copiar.tsx",
+        "Tiles/House.tsx",
+        "Tiles/Interior.tsx",
+        "Tiles/Maple Tree.tsx",
+        "Tiles/Road copiar.tsx",
+        "Tiles/Spring Crops.tsx"
+    ],
+    "project": "map2.tiled-project",
+    "recentFiles": [
+        "Tiles/Spring Crops.tsx",
+        "Tiles/Road copiar.tsx",
+        "Tiles/Maple Tree.tsx",
+        "Tiles/Interior.tsx",
+        "Tiles/House.tsx",
+        "Tiles/Fence's copiar.tsx",
+        "Tiles/farmrpg.tsx",
+        "Tiles/chest.tsx",
+        "map2.tmx",
+        "Maple Tree.tsx",
+        "chest.tsx",
+        "House.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
