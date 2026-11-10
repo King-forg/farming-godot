@@ -1,47 +1,38 @@
-extends CharacterBody2D
+extends AnimatedSprite2D
 
-@export var speed = 200.0
+var last_direction = "forward"
 
-@onready var sprite = $AnimatedSprite2D
+func update_animation(direction, running):
 
-var last_direction = "down"
+	if direction != Vector2.ZERO:
 
+		if abs(direction.x) > abs(direction.y):
+			last_direction = "right"
+			flip_h = direction.x < 0
 
-func _physics_process(delta):
-	
-	var direction = Input.get_vector(
-		"move_left",
-		"move_right",
-		"move_up",
-		"move_down"
-	)
-		velocity = direction  * speed
-		move_and_slide()
-		
-		if direction != Vector2.ZERO:
-			
-			if abs(direction.x) > abs(direction.y):
-				last_direction = "side"
-				sprite.flip_h = direction.x < 0
-				
-			elif direction.y < 0:
-				last_direction = "up"
-			
-			else:
-				last_direction = "down"
-				
-			sprite.play(last_direction)
-		
+		elif direction.y < 0:
+			last_direction = "backward"
+			flip_h = false
+
 		else:
-			sprite.stop()
-			sprite.frame = 0
-	
-	
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+			last_direction = "forward"
+			flip_h = false
 
+		var animation_name = ""
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+		if running:
+			animation_name = "run-" + last_direction
+		else:
+			animation_name = "walk-" + last_direction
+
+		if animation != animation_name:
+			play(animation_name)
+
+	else:
+		match last_direction:
+			"backward":
+				play("idle-backward")
+			"forward":
+				play("idle-forward")
+			"right":
+				play("idle-right")
