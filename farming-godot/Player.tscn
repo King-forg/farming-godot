@@ -390,7 +390,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cxr5p"]
-size = Vector2(12, 18)
+size = Vector2(12, 19)
 
 [node name="Node2D" type="Node2D" unique_id=1800919992]
 
@@ -404,4 +404,13 @@ frame_progress = 0.1869242
 script = ExtResource("4_cxr5p")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=283304284]
+position = Vector2(1, 0.5)
 shape = SubResource("RectangleShape2D_cxr5p")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=705553896]
+zoom = Vector2(2, 2)
+process_callback = 0
+limit_smoothed = true
+position_smoothing_enabled = true
+position_smoothing_speed = 3.7
+rotation_smoothing_enabled = true

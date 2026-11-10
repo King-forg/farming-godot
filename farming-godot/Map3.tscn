@@ -2,13 +2,41 @@
 
 [ext_resource type="PackedScene" uid="uid://dkhbhji4t43x7" path="res://assets/Map/Map3.tmx" id="1_7quqo"]
 [ext_resource type="PackedScene" uid="uid://c08x4qqgiik1x" path="res://Player.tscn" id="2_7quqo"]
+[ext_resource type="TileSet" uid="uid://cy347wxjd5h55" path="res://assets/textures/Tileset/tiles.tres" id="2_raod7"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_857xr"]
 
 [node name="World" unique_id=2121325171 instance=ExtResource("1_7quqo")]
 
-[node name="StaticBody2" parent="Collisions" parent_id_path=PackedInt32Array(272941014) index="1" unique_id=395974731]
-position = Vector2(634, 407)
-physics_material_override = SubResource("PhysicsMaterial_857xr")
+[node name="Terrain" parent="." index="0" unique_id=1500404204]
+collision_enabled = false
+
+[node name="Plants" parent="." index="1" unique_id=1965547761]
+collision_enabled = false
+
+[node name="Roads" parent="." index="2" unique_id=1258395962]
+collision_enabled = false
+
+[node name="Furnishing" parent="." index="3" unique_id=411312963]
+y_sort_enabled = true
+collision_enabled = false
+
+[node name="Tree trunk" parent="." index="4" unique_id=25243948]
+y_sort_enabled = true
+collision_enabled = false
+
+[node name="Tree top" parent="." index="5" unique_id=686014105]
+y_sort_enabled = true
+collision_enabled = false
+
+[node name="Fences" parent="." index="6" unique_id=507094759]
+y_sort_enabled = true
+tile_set = ExtResource("2_raod7")
+collision_enabled = false
 
 [node name="Node2D" parent="." index="7" unique_id=1800919992 instance=ExtResource("2_7quqo")]
+y_sort_enabled = true
+
+[node name="StaticBody2" parent="Collisions" parent_id_path=PackedInt32Array(393581221) index="1" unique_id=624601993]
+position = Vector2(634, 407)
+physics_material_override = SubResource("PhysicsMaterial_857xr")
