@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://cm4ssfnick67f"]
+
+[ext_resource type="Texture2D" uid="uid://c4pwr6cw0pgum" path="res://assets/textures/Farm Animals/Chicken Blonde  Green.png" id="1_vhcla"]
+[ext_resource type="Script" uid="uid://ba2mweig0shl8" path="res://timer.gd" id="2_b8sg0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3jl4"]
+size = Vector2(14, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_veq33"]
+atlas = ExtResource("1_vhcla")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8marb"]
+atlas = ExtResource("1_vhcla")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7o31"]
+atlas = ExtResource("1_vhcla")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmkk1"]
+atlas = ExtResource("1_vhcla")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7y3vq"]
+atlas = ExtResource("1_vhcla")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x8e84"]
+atlas = ExtResource("1_vhcla")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cpog0"]
+atlas = ExtResource("1_vhcla")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohdw8"]
+atlas = ExtResource("1_vhcla")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nqi14"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_veq33")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8marb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7o31")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmkk1")
+}],
+"loop": 1,
+"name": &"walk-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7y3vq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x8e84")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cpog0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohdw8")
+}],
+"loop": 1,
+"name": &"walk-up",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1933815056]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=656678112]
+motion_mode = 1
+script = ExtResource("2_b8sg0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1975502179]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_y3jl4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1220616548]
+position = Vector2(0, -6)
+sprite_frames = SubResource("SpriteFrames_nqi14")
+animation = &"walk-down"
+
+[node name="Timer" type="Timer" parent="CharacterBody2D" unique_id=1080826056]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="CharacterBody2D/Timer" to="CharacterBody2D" method="_on_timer_timeout"]

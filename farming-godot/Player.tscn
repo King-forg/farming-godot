@@ -390,21 +390,24 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cxr5p"]
-size = Vector2(12, 19)
+size = Vector2(11, 3)
 
 [node name="Node2D" type="Node2D" unique_id=1800919992]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=418364425]
+motion_mode = 1
 script = ExtResource("1_e80uo")
+speed = 35.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=203164426]
+position = Vector2(0, -7)
 sprite_frames = SubResource("SpriteFrames_e80uo")
 animation = &"run-right"
 frame_progress = 0.1869242
 script = ExtResource("4_cxr5p")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=283304284]
-position = Vector2(1, 0.5)
+position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_cxr5p")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=705553896]
