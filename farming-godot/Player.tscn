@@ -392,25 +392,24 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cxr5p"]
 size = Vector2(11, 3)
 
-[node name="Node2D" type="Node2D" unique_id=1800919992]
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=418364425]
+[node name="Player" type="CharacterBody2D" unique_id=3873286]
 motion_mode = 1
 script = ExtResource("1_e80uo")
 speed = 35.0
+run_speed = 60.0
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=203164426]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1043508649]
 position = Vector2(0, -7)
 sprite_frames = SubResource("SpriteFrames_e80uo")
 animation = &"run-right"
 frame_progress = 0.1869242
 script = ExtResource("4_cxr5p")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=283304284]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1994822105]
 position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_cxr5p")
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=705553896]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=50660532]
 zoom = Vector2(2, 2)
 process_callback = 0
 limit_smoothed = true

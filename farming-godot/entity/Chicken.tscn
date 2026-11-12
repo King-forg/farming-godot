@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cm4ssfnick67f"]
 
 [ext_resource type="Texture2D" uid="uid://c4pwr6cw0pgum" path="res://assets/textures/Farm Animals/Chicken Blonde  Green.png" id="1_vhcla"]
-[ext_resource type="Script" uid="uid://ba2mweig0shl8" path="res://timer.gd" id="2_b8sg0"]
+[ext_resource type="Script" uid="uid://ba2mweig0shl8" path="res://entity/timer.gd" id="2_b8sg0"]
+[ext_resource type="Script" uid="uid://c2lqir8ppbtky" path="res://entity/character_animation.gd" id="3_gfsf1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y3jl4"]
 size = Vector2(14, 6)
@@ -75,23 +76,22 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D" unique_id=1933815056]
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=656678112]
+[node name="Chicken" type="CharacterBody2D" unique_id=166082376]
 motion_mode = 1
 script = ExtResource("2_b8sg0")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1975502179]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=113749819]
 position = Vector2(0, -2)
 shape = SubResource("RectangleShape2D_y3jl4")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1220616548]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=880111152]
 position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_nqi14")
 animation = &"walk-down"
+script = ExtResource("3_gfsf1")
 
-[node name="Timer" type="Timer" parent="CharacterBody2D" unique_id=1080826056]
+[node name="Timer" type="Timer" parent="." unique_id=1030798970]
 wait_time = 2.0
 autostart = true
 
-[connection signal="timeout" from="CharacterBody2D/Timer" to="CharacterBody2D" method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

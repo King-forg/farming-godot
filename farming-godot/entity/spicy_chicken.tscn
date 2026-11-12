@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://b4ajxcpxqmyxq"]
+
+[ext_resource type="Script" uid="uid://ba2mweig0shl8" path="res://entity/timer.gd" id="1_3wsat"]
+[ext_resource type="Texture2D" uid="uid://b8jbebiftjeq4" path="res://assets/textures/Farm Animals/Chicken Red.png" id="2_8jxid"]
+[ext_resource type="Script" uid="uid://c2lqir8ppbtky" path="res://entity/character_animation.gd" id="3_3ihet"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3aek"]
+atlas = ExtResource("2_8jxid")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3xqx"]
+atlas = ExtResource("2_8jxid")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mnhvw"]
+atlas = ExtResource("2_8jxid")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68n0t"]
+atlas = ExtResource("2_8jxid")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ymew"]
+atlas = ExtResource("2_8jxid")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jg4e8"]
+atlas = ExtResource("2_8jxid")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4v318"]
+atlas = ExtResource("2_8jxid")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qm4b2"]
+atlas = ExtResource("2_8jxid")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nqi14"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3aek")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a3xqx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mnhvw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68n0t")
+}],
+"loop": 1,
+"name": &"walk-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ymew")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jg4e8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4v318")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qm4b2")
+}],
+"loop": 1,
+"name": &"walk-up",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_esjqf"]
+size = Vector2(14, 6)
+
+[node name="Spicy Chicken" type="CharacterBody2D" unique_id=558307896]
+script = ExtResource("1_3wsat")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1111220575]
+position = Vector2(0, -6)
+sprite_frames = SubResource("SpriteFrames_nqi14")
+animation = &"walk-up"
+script = ExtResource("3_3ihet")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1050861499]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_esjqf")
+
+[node name="Timer" type="Timer" parent="." unique_id=495406265]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
