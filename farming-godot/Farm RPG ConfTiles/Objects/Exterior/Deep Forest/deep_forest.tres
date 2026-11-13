@@ -1,0 +1,136 @@
+[gd_resource type="TileSet" format=3 uid="uid://p8y21d6386kp"]
+
+[ext_resource type="Texture2D" uid="uid://kmelmst8u8kc" path="res://Farm RPG/Objects/Exterior/Deep Forest/Altar.png" id="1_djmkg"]
+[ext_resource type="Texture2D" uid="uid://sp6siaoevqaq" path="res://Farm RPG/Objects/Exterior/Deep Forest/Bridge.png" id="2_3kgqn"]
+[ext_resource type="Texture2D" uid="uid://dvlec34jvwee1" path="res://Farm RPG/Objects/Exterior/Deep Forest/Broken Stone Column.png" id="3_78hhe"]
+[ext_resource type="Texture2D" uid="uid://gptt332lqh7j" path="res://Farm RPG/Objects/Exterior/Deep Forest/Broken Stone Pillar.png" id="4_yycmp"]
+[ext_resource type="Texture2D" uid="uid://p5hdcfdtsann" path="res://Farm RPG/Objects/Exterior/Deep Forest/Decor.png" id="5_dinaj"]
+[ext_resource type="Texture2D" uid="uid://bt6g7mwukigey" path="res://Farm RPG/Objects/Exterior/Deep Forest/Hidden Entrance.png" id="6_0xdpu"]
+[ext_resource type="Texture2D" uid="uid://tjt4ais22w6r" path="res://Farm RPG/Objects/Exterior/Deep Forest/Root portal.png" id="7_bvt10"]
+[ext_resource type="Texture2D" uid="uid://c5tagfak3h4bt" path="res://Farm RPG/Objects/Exterior/Deep Forest/Secret Entrance.png" id="8_kthtv"]
+[ext_resource type="Texture2D" uid="uid://bbafafravknyi" path="res://Farm RPG/Objects/Exterior/Deep Forest/Stone Column.png" id="9_s2etq"]
+[ext_resource type="Texture2D" uid="uid://ry45dngp5f65" path="res://Farm RPG/Objects/Exterior/Deep Forest/Stone Pillar.png" id="10_yqgst"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_21rlq"]
+texture = ExtResource("1_djmkg")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+5:1/0 = 0
+4:1/0 = 0
+3:1/0 = 0
+2:1/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljxog"]
+texture = ExtResource("2_3kgqn")
+0:0/size_in_atlas = Vector2i(5, 4)
+0:0/0 = 0
+0:4/size_in_atlas = Vector2i(5, 4)
+0:4/0 = 0
+0:8/size_in_atlas = Vector2i(5, 4)
+0:8/0 = 0
+0:12/size_in_atlas = Vector2i(5, 4)
+0:12/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tkpwc"]
+texture = ExtResource("3_78hhe")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3xkih"]
+texture = ExtResource("4_yycmp")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ax0gh"]
+texture = ExtResource("5_dinaj")
+0:0/size_in_atlas = Vector2i(1, 2)
+0:0/0 = 0
+1:0/size_in_atlas = Vector2i(1, 2)
+1:0/0 = 0
+2:0/size_in_atlas = Vector2i(1, 2)
+2:0/0 = 0
+3:0/size_in_atlas = Vector2i(1, 2)
+3:0/0 = 0
+4:0/size_in_atlas = Vector2i(1, 2)
+4:0/0 = 0
+0:2/size_in_atlas = Vector2i(1, 2)
+0:2/0 = 0
+1:2/size_in_atlas = Vector2i(1, 2)
+1:2/0 = 0
+2:2/size_in_atlas = Vector2i(1, 2)
+2:2/0 = 0
+3:2/size_in_atlas = Vector2i(1, 2)
+3:2/0 = 0
+4:2/size_in_atlas = Vector2i(1, 2)
+4:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g2c20"]
+texture = ExtResource("6_0xdpu")
+0:0/size_in_atlas = Vector2i(5, 6)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_76f1u"]
+texture = ExtResource("7_bvt10")
+0:0/size_in_atlas = Vector2i(3, 3)
+0:0/0 = 0
+3:0/size_in_atlas = Vector2i(3, 3)
+3:0/0 = 0
+6:0/size_in_atlas = Vector2i(3, 3)
+6:0/0 = 0
+9:0/size_in_atlas = Vector2i(3, 3)
+9:0/0 = 0
+12:0/size_in_atlas = Vector2i(3, 3)
+12:0/0 = 0
+0:3/size_in_atlas = Vector2i(3, 3)
+0:3/0 = 0
+3:3/size_in_atlas = Vector2i(3, 3)
+3:3/0 = 0
+6:3/size_in_atlas = Vector2i(3, 3)
+6:3/0 = 0
+9:3/size_in_atlas = Vector2i(3, 3)
+9:3/0 = 0
+12:3/size_in_atlas = Vector2i(3, 3)
+12:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8vfqo"]
+texture = ExtResource("8_kthtv")
+0:0/size_in_atlas = Vector2i(3, 3)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcjv1"]
+texture = ExtResource("9_s2etq")
+0:0/size_in_atlas = Vector2i(2, 4)
+0:0/0 = 0
+2:0/size_in_atlas = Vector2i(2, 4)
+2:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o8hon"]
+texture = ExtResource("10_yqgst")
+0:0/size_in_atlas = Vector2i(1, 2)
+0:0/0 = 0
+1:0/size_in_atlas = Vector2i(1, 2)
+1:0/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_21rlq")
+sources/1 = SubResource("TileSetAtlasSource_ljxog")
+sources/2 = SubResource("TileSetAtlasSource_tkpwc")
+sources/3 = SubResource("TileSetAtlasSource_3xkih")
+sources/4 = SubResource("TileSetAtlasSource_ax0gh")
+sources/5 = SubResource("TileSetAtlasSource_g2c20")
+sources/6 = SubResource("TileSetAtlasSource_76f1u")
+sources/7 = SubResource("TileSetAtlasSource_8vfqo")
+sources/8 = SubResource("TileSetAtlasSource_fcjv1")
+sources/9 = SubResource("TileSetAtlasSource_o8hon")

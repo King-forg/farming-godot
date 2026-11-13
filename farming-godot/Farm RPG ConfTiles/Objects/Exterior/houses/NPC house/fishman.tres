@@ -1,0 +1,174 @@
+[gd_resource type="TileSet" format=3 uid="uid://c50modjq57don"]
+
+[ext_resource type="Texture2D" uid="uid://cg4ek25iutge0" path="res://Farm RPG/Objects/Exterior/Houses/NPCS houses/Fishman/Fishman2.png" id="1_wvpca"]
+[ext_resource type="Texture2D" uid="uid://dle3pmq2t8b8m" path="res://Farm RPG/Objects/Exterior/Houses/NPCS houses/Fishman/Fishman house 2 door.png" id="2_b3v72"]
+[ext_resource type="Texture2D" uid="uid://fvmc34gmdtmp" path="res://Farm RPG/Objects/Exterior/Houses/NPCS houses/Fishman/Fishman house 2 tile.png" id="3_i0xmw"]
+[ext_resource type="Texture2D" uid="uid://cs5xpmn45aur8" path="res://Farm RPG/Objects/Exterior/Houses/NPCS houses/Fishman/Fishman house.png" id="4_ifoew"]
+[ext_resource type="Texture2D" uid="uid://dc78vdloooix4" path="res://Farm RPG/Objects/Exterior/Houses/NPCS houses/Fishman/Fishman objects.png" id="5_udot2"]
+[ext_resource type="Texture2D" uid="uid://dvsqna0aa8t4w" path="res://Farm RPG/Objects/Exterior/Houses/NPCS houses/Fishman/Fishman Tile.png" id="6_elu7y"]
+[ext_resource type="Texture2D" uid="uid://cb2byd6oybvj" path="res://Farm RPG/Objects/Exterior/Houses/NPCS houses/Fishman/Fishman.png" id="7_c6yoi"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sx2we"]
+texture = ExtResource("1_wvpca")
+0:0/size_in_atlas = Vector2i(3, 6)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xwi5u"]
+texture = ExtResource("2_b3v72")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+2:0/size_in_atlas = Vector2i(2, 2)
+2:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_khc3g"]
+texture = ExtResource("3_i0xmw")
+0:0/size_in_atlas = Vector2i(3, 2)
+0:0/0 = 0
+3:0/size_in_atlas = Vector2i(3, 2)
+3:0/0 = 0
+0:2/size_in_atlas = Vector2i(3, 3)
+0:2/0 = 0
+3:2/size_in_atlas = Vector2i(3, 3)
+3:2/0 = 0
+6:2/size_in_atlas = Vector2i(3, 3)
+6:2/0 = 0
+6:0/size_in_atlas = Vector2i(3, 2)
+6:0/0 = 0
+9:0/size_in_atlas = Vector2i(3, 2)
+9:0/0 = 0
+12:0/size_in_atlas = Vector2i(3, 2)
+12:0/0 = 0
+15:0/size_in_atlas = Vector2i(3, 2)
+15:0/0 = 0
+9:2/size_in_atlas = Vector2i(3, 3)
+9:2/0 = 0
+12:3/size_in_atlas = Vector2i(3, 3)
+12:3/0 = 0
+16:3/size_in_atlas = Vector2i(3, 3)
+16:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l2s3c"]
+texture = ExtResource("4_ifoew")
+0:0/size_in_atlas = Vector2i(5, 7)
+0:0/0 = 0
+5:0/size_in_atlas = Vector2i(5, 7)
+5:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jso7j"]
+texture = ExtResource("5_udot2")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+2:0/size_in_atlas = Vector2i(2, 2)
+2:0/0 = 0
+4:0/size_in_atlas = Vector2i(2, 2)
+4:0/0 = 0
+6:0/size_in_atlas = Vector2i(2, 2)
+6:0/0 = 0
+8:0/size_in_atlas = Vector2i(2, 2)
+8:0/0 = 0
+10:0/size_in_atlas = Vector2i(2, 2)
+10:0/0 = 0
+12:0/size_in_atlas = Vector2i(2, 2)
+12:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qh654"]
+texture = ExtResource("6_elu7y")
+0:0/size_in_atlas = Vector2i(5, 6)
+0:0/0 = 0
+0:6/size_in_atlas = Vector2i(2, 2)
+0:6/0 = 0
+5:0/size_in_atlas = Vector2i(5, 6)
+5:0/0 = 0
+10:0/size_in_atlas = Vector2i(5, 3)
+10:0/0 = 0
+10:3/size_in_atlas = Vector2i(5, 3)
+10:3/0 = 0
+15:0/size_in_atlas = Vector2i(3, 5)
+15:0/0 = 0
+18:0/size_in_atlas = Vector2i(3, 5)
+18:0/0 = 0
+15:5/size_in_atlas = Vector2i(3, 2)
+15:5/0 = 0
+18:5/size_in_atlas = Vector2i(3, 2)
+18:5/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_el8vi"]
+texture = ExtResource("7_c6yoi")
+0:0/size_in_atlas = Vector2i(5, 7)
+0:0/0 = 0
+5:0/size_in_atlas = Vector2i(5, 7)
+5:0/0 = 0
+10:0/size_in_atlas = Vector2i(5, 7)
+10:0/0 = 0
+15:0/size_in_atlas = Vector2i(5, 7)
+15:0/0 = 0
+23:0/size_in_atlas = Vector2i(3, 5)
+23:0/0 = 0
+23:5/size_in_atlas = Vector2i(3, 5)
+23:5/0 = 0
+20:0/size_in_atlas = Vector2i(2, 2)
+20:0/0 = 0
+20:2/size_in_atlas = Vector2i(3, 2)
+20:2/0 = 0
+20:4/size_in_atlas = Vector2i(3, 2)
+20:4/0 = 0
+0:8/size_in_atlas = Vector2i(2, 2)
+0:8/0 = 0
+2:8/size_in_atlas = Vector2i(2, 2)
+2:8/0 = 0
+4:8/size_in_atlas = Vector2i(2, 2)
+4:8/0 = 0
+6:8/size_in_atlas = Vector2i(2, 2)
+6:8/0 = 0
+8:8/size_in_atlas = Vector2i(2, 2)
+8:8/0 = 0
+10:8/size_in_atlas = Vector2i(2, 2)
+10:8/0 = 0
+12:8/0 = 0
+13:7/size_in_atlas = Vector2i(5, 3)
+13:7/0 = 0
+18:7/size_in_atlas = Vector2i(5, 3)
+18:7/0 = 0
+0:10/size_in_atlas = Vector2i(3, 6)
+0:10/0 = 0
+3:10/size_in_atlas = Vector2i(3, 2)
+3:10/0 = 0
+6:10/size_in_atlas = Vector2i(3, 2)
+6:10/0 = 0
+9:10/size_in_atlas = Vector2i(3, 2)
+9:10/0 = 0
+12:10/size_in_atlas = Vector2i(3, 2)
+12:10/0 = 0
+15:10/size_in_atlas = Vector2i(3, 2)
+15:10/0 = 0
+18:10/size_in_atlas = Vector2i(3, 2)
+18:10/0 = 0
+3:12/size_in_atlas = Vector2i(3, 3)
+3:12/0 = 0
+6:12/size_in_atlas = Vector2i(3, 3)
+6:12/0 = 0
+9:12/size_in_atlas = Vector2i(3, 3)
+9:12/0 = 0
+12:12/size_in_atlas = Vector2i(3, 3)
+12:12/0 = 0
+15:13/size_in_atlas = Vector2i(3, 3)
+15:13/0 = 0
+19:13/size_in_atlas = Vector2i(3, 3)
+19:13/0 = 0
+22:11/size_in_atlas = Vector2i(2, 2)
+22:11/0 = 0
+24:11/size_in_atlas = Vector2i(2, 2)
+24:11/0 = 0
+23:13/size_in_atlas = Vector2i(1, 2)
+23:13/0 = 0
+23:15/size_in_atlas = Vector2i(1, 2)
+23:15/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_sx2we")
+sources/1 = SubResource("TileSetAtlasSource_xwi5u")
+sources/2 = SubResource("TileSetAtlasSource_khc3g")
+sources/3 = SubResource("TileSetAtlasSource_l2s3c")
+sources/4 = SubResource("TileSetAtlasSource_jso7j")
+sources/5 = SubResource("TileSetAtlasSource_qh654")
+sources/6 = SubResource("TileSetAtlasSource_el8vi")

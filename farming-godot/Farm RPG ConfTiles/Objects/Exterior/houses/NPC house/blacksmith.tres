@@ -1,0 +1,50 @@
+[gd_resource type="TileSet" format=3 uid="uid://dewtbs0j1s36x"]
+
+[ext_resource type="Texture2D" uid="uid://xpxad7fuyv6u" path="res://Farm RPG/Objects/Exterior/Houses/NPCS houses/Blacksmith/Blacksmith2.png" id="1_h0nqg"]
+[ext_resource type="Texture2D" uid="uid://bblr1gyg3qc2k" path="res://Farm RPG/Objects/Exterior/Houses/NPCS houses/Blacksmith/Blacksmith house.png" id="2_3ydsj"]
+[ext_resource type="Texture2D" uid="uid://q24lmdc80agc" path="res://Farm RPG/Objects/Exterior/Houses/NPCS houses/Blacksmith/Blacksmith objects.png" id="3_6l73r"]
+[ext_resource type="Texture2D" uid="uid://btnwq0nfgpy7f" path="res://Farm RPG/Objects/Exterior/Houses/NPCS houses/Blacksmith/Blacksmith.png" id="4_bnix6"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4twk3"]
+texture = ExtResource("1_h0nqg")
+0:0/size_in_atlas = Vector2i(5, 6)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3uqnc"]
+texture = ExtResource("2_3ydsj")
+0:0/size_in_atlas = Vector2i(9, 6)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qune"]
+texture = ExtResource("3_6l73r")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+2:0/size_in_atlas = Vector2i(2, 2)
+2:0/0 = 0
+0:2/size_in_atlas = Vector2i(2, 2)
+0:2/0 = 0
+2:2/size_in_atlas = Vector2i(2, 2)
+2:2/0 = 0
+0:4/size_in_atlas = Vector2i(2, 2)
+0:4/0 = 0
+2:4/size_in_atlas = Vector2i(2, 2)
+2:4/0 = 0
+0:6/size_in_atlas = Vector2i(2, 2)
+0:6/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e67dj"]
+texture = ExtResource("4_bnix6")
+0:0/size_in_atlas = Vector2i(9, 6)
+0:0/0 = 0
+0:6/size_in_atlas = Vector2i(9, 4)
+0:6/0 = 0
+9:6/size_in_atlas = Vector2i(9, 4)
+9:6/0 = 0
+9:0/size_in_atlas = Vector2i(9, 6)
+9:0/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_4twk3")
+sources/1 = SubResource("TileSetAtlasSource_3uqnc")
+sources/2 = SubResource("TileSetAtlasSource_6qune")
+sources/3 = SubResource("TileSetAtlasSource_e67dj")
