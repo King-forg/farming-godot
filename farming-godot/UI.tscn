@@ -1,5 +1,280 @@
 [gd_scene format=3 uid="uid://bam1avc1fkhn3"]
 
-[node name="Node2D" type="Node2D" unique_id=821174417]
+[ext_resource type="Texture2D" uid="uid://spqpa2bvdfk7" path="res://Farm RPG/UI/0.2.png" id="1_b3bc3"]
+[ext_resource type="Texture2D" uid="uid://jfjhpmw23ioq" path="res://Farm RPG/UI/dialogue box.png" id="2_g6l6n"]
+[ext_resource type="Texture2D" uid="uid://bja0fxyq2q5c5" path="res://Farm RPG/UI/button.png" id="2_qui0h"]
+[ext_resource type="Script" uid="uid://birr8l23e8d8s" path="res://toggleswitch.gd" id="3_qui0h"]
+[ext_resource type="Script" uid="uid://smxm43kdl4up" path="res://resume.gd" id="3_vrfts"]
 
-[node name="Node2D" type="Node2D" parent="." unique_id=1640999124]
+[node name="UI" type="Control" unique_id=2101708682]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InGameMenu" type="MarginContainer" parent="." unique_id=214338064]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainInGameMenu" type="MarginContainer" parent="InGameMenu" unique_id=1925615714]
+custom_minimum_size = Vector2(480, 160)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InGameMenu/MainInGameMenu" unique_id=75074529]
+custom_minimum_size = Vector2(480, 160)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Light2" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer" unique_id=613840665]
+custom_minimum_size = Vector2(240, 80)
+custom_maximum_size = Vector2(240, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+texture = ExtResource("1_b3bc3")
+region_rect = Rect2(80, 0, 48, 16)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2" unique_id=763160516]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Resume" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer" unique_id=1027823809]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("2_qui0h")
+region_rect = Rect2(176, 208, 16, 16)
+
+[node name="Button" type="Button" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/Resume" unique_id=2089182419]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+flat = true
+script = ExtResource("3_vrfts")
+
+[node name="Power" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer" unique_id=1600361324]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("2_qui0h")
+region_rect = Rect2(224, 208, 16, 16)
+
+[node name="Button" type="Button" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/Power" unique_id=1713207206]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+flat = true
+
+[node name="MarginContainer" type="MarginContainer" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer" unique_id=1932620473]
+custom_minimum_size = Vector2(50, 50)
+custom_maximum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Music" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/MarginContainer" unique_id=2010896150]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("2_qui0h")
+region_rect = Rect2(192, 208, 16, 16)
+
+[node name="Music2" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/MarginContainer" unique_id=745123248]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("2_qui0h")
+region_rect = Rect2(192, 208, 16, 16)
+
+[node name="Button" type="Button" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/MarginContainer" unique_id=999542987]
+layout_mode = 2
+toggle_mode = true
+flat = true
+
+[node name="Light" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer" unique_id=808961990]
+custom_minimum_size = Vector2(240, 240)
+custom_maximum_size = Vector2(240, 240)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+texture = ExtResource("2_g6l6n")
+region_rect = Rect2(0, 48, 48, 48)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light" unique_id=1276003671]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -70.5
+offset_right = -15.0
+offset_bottom = 70.5
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Switch1" type="MarginContainer" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer" unique_id=925733213]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+
+[node name="Switch_1ON" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch1" unique_id=1223247390]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+texture = ExtResource("1_b3bc3")
+region_rect = Rect2(48, 35, 16, 10)
+
+[node name="Switch_1OFF" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch1" unique_id=2023581155]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+texture = ExtResource("1_b3bc3")
+region_rect = Rect2(64, 35, 16, 10)
+script = ExtResource("3_qui0h")
+
+[node name="Button" type="Button" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch1" unique_id=1261851688]
+layout_mode = 2
+toggle_mode = true
+flat = true
+
+[node name="Switch2" type="MarginContainer" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer" unique_id=1443669958]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+
+[node name="Switch_1ON" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch2" unique_id=72647623]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+texture = ExtResource("1_b3bc3")
+region_rect = Rect2(48, 35, 16, 10)
+
+[node name="Switch_1OFF" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch2" unique_id=1028332976]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+texture = ExtResource("1_b3bc3")
+region_rect = Rect2(64, 35, 16, 10)
+script = ExtResource("3_qui0h")
+
+[node name="Button" type="Button" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch2" unique_id=744422511]
+layout_mode = 2
+toggle_mode = true
+flat = true
+
+[node name="Switch3" type="MarginContainer" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer" unique_id=280027045]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+
+[node name="Switch_1ON" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch3" unique_id=1656615877]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+texture = ExtResource("1_b3bc3")
+region_rect = Rect2(48, 35, 16, 10)
+
+[node name="Switch_1OFF" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch3" unique_id=2018113582]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+texture = ExtResource("1_b3bc3")
+region_rect = Rect2(64, 35, 16, 10)
+script = ExtResource("3_qui0h")
+
+[node name="Button" type="Button" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch3" unique_id=1672453412]
+layout_mode = 2
+toggle_mode = true
+flat = true
+
+[node name="Switch4" type="MarginContainer" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer" unique_id=770108946]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+
+[node name="Switch_1ON" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch4" unique_id=59513514]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+texture = ExtResource("1_b3bc3")
+region_rect = Rect2(48, 35, 16, 10)
+
+[node name="Switch_1OFF" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch4" unique_id=567806704]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+texture = ExtResource("1_b3bc3")
+region_rect = Rect2(64, 35, 16, 10)
+script = ExtResource("3_qui0h")
+
+[node name="Button" type="Button" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch4" unique_id=2140997112]
+layout_mode = 2
+toggle_mode = true
+flat = true
+
+[node name="Switch5" type="MarginContainer" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer" unique_id=1228260853]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+
+[node name="Switch_1ON" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch5" unique_id=366517006]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+texture = ExtResource("1_b3bc3")
+region_rect = Rect2(48, 35, 16, 10)
+
+[node name="Switch_1OFF" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch5" unique_id=1765947352]
+custom_minimum_size = Vector2(40, 25)
+custom_maximum_size = Vector2(40, 25)
+layout_mode = 2
+texture = ExtResource("1_b3bc3")
+region_rect = Rect2(64, 35, 16, 10)
+script = ExtResource("3_qui0h")
+
+[node name="Button" type="Button" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch5" unique_id=2111415872]
+layout_mode = 2
+toggle_mode = true
+flat = true
+
+[node name="inGameGUI" type="MarginContainer" parent="." unique_id=885529600]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch1/Button" to="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch1/Switch_1OFF" method="_on_button_pressed"]
+[connection signal="toggled" from="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch1/Button" to="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch1/Switch_1OFF" method="_on_button_toggled"]
+[connection signal="pressed" from="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch2/Button" to="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch2/Switch_1OFF" method="_on_button_pressed"]
+[connection signal="toggled" from="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch2/Button" to="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch2/Switch_1OFF" method="_on_button_toggled"]
+[connection signal="pressed" from="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch3/Button" to="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch3/Switch_1OFF" method="_on_button_pressed"]
+[connection signal="toggled" from="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch3/Button" to="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch3/Switch_1OFF" method="_on_button_toggled"]
+[connection signal="pressed" from="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch4/Button" to="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch4/Switch_1OFF" method="_on_button_pressed"]
+[connection signal="toggled" from="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch4/Button" to="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch4/Switch_1OFF" method="_on_button_toggled"]
+[connection signal="pressed" from="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch5/Button" to="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch5/Switch_1OFF" method="_on_button_pressed"]
+[connection signal="toggled" from="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch5/Button" to="InGameMenu/MainInGameMenu/VBoxContainer/Light/VBoxContainer/Switch5/Switch_1OFF" method="_on_button_toggled"]
