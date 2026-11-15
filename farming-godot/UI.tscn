@@ -104,7 +104,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("2_qui0h")
-region_rect = Rect2(192, 224, 16, 16)
+region_rect = Rect2(208, 224, 16, 16)
 
 [node name="Musicon" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/MarginContainer" unique_id=2010896150]
 custom_minimum_size = Vector2(50, 50)
