@@ -4,6 +4,7 @@ extends Node2D
 
 var musicvol = 0.1
 var fade = 3.0
+var music_muted := false
 
 var musictracks = [preload("res://assets/music/music1.mp3"), preload("res://assets/music/music2.mp3")]
 
@@ -19,7 +20,8 @@ func start_music():
 		music.play()
 		
 		var fade_in = create_tween()
-		fade_in.tween_property(music, "volume_db", linear_to_db(musicvol), fade)
+		var target_volume_db := -80.0 if music_muted else linear_to_db(musicvol)
+		fade_in.tween_property(music, "volume_db", target_volume_db, fade)
 		
 		await music.finished
 		

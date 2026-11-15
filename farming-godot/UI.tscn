@@ -5,6 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://bja0fxyq2q5c5" path="res://Farm RPG/UI/button.png" id="2_qui0h"]
 [ext_resource type="Script" uid="uid://birr8l23e8d8s" path="res://toggleswitch.gd" id="3_qui0h"]
 [ext_resource type="Script" uid="uid://smxm43kdl4up" path="res://resume.gd" id="3_vrfts"]
+[ext_resource type="AudioStream" uid="uid://dwarae2p51f6" path="res://assets/music/click.mp3" id="4_0mc3e"]
+[ext_resource type="Script" uid="uid://c7w5vgh5b57d3" path="res://power.gd" id="4_2n5f6"]
+[ext_resource type="Script" uid="uid://yji3se1s888m" path="res://musicTOGGLE.gd" id="5_27c8x"]
 
 [node name="UI" type="Control" unique_id=2101708682]
 layout_mode = 3
@@ -55,20 +58,23 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Resume" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer" unique_id=1027823809]
+[node name="Resume" type="MarginContainer" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer" unique_id=1379515157]
+layout_mode = 2
+
+[node name="ResumeOFF" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/Resume" unique_id=2084591056]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("2_qui0h")
+region_rect = Rect2(176, 224, 16, 16)
+
+[node name="ResumeON" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/Resume" unique_id=1027823809]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("2_qui0h")
 region_rect = Rect2(176, 208, 16, 16)
 
 [node name="Button" type="Button" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/Resume" unique_id=2089182419]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-toggle_mode = true
+layout_mode = 2
 flat = true
 script = ExtResource("3_vrfts")
 
@@ -87,19 +93,20 @@ grow_horizontal = 2
 grow_vertical = 2
 toggle_mode = true
 flat = true
+script = ExtResource("4_2n5f6")
 
 [node name="MarginContainer" type="MarginContainer" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer" unique_id=1932620473]
 custom_minimum_size = Vector2(50, 50)
 custom_maximum_size = Vector2(50, 50)
 layout_mode = 2
 
-[node name="Music" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/MarginContainer" unique_id=2010896150]
+[node name="MusicOFF" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/MarginContainer" unique_id=745123248]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("2_qui0h")
-region_rect = Rect2(192, 208, 16, 16)
+region_rect = Rect2(192, 224, 16, 16)
 
-[node name="Music2" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/MarginContainer" unique_id=745123248]
+[node name="Musicon" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer/MarginContainer" unique_id=2010896150]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("2_qui0h")
@@ -109,6 +116,11 @@ region_rect = Rect2(192, 208, 16, 16)
 layout_mode = 2
 toggle_mode = true
 flat = true
+script = ExtResource("5_27c8x")
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light2/HBoxContainer" unique_id=628323628]
+stream = ExtResource("4_0mc3e")
+mix_target = 1
 
 [node name="Light" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer" unique_id=808961990]
 custom_minimum_size = Vector2(240, 240)
@@ -263,8 +275,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 1.0
-offset_bottom = 1.0
+offset_left = -2.0
+offset_right = -2.0
 grow_horizontal = 2
 grow_vertical = 2
 
