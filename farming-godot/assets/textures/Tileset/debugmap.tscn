@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://c08x4qqgiik1x" path="res://Player.tscn" id="11_0oe3f"]
 [ext_resource type="PackedScene" uid="uid://cm4ssfnick67f" path="res://entity/Chicken.tscn" id="12_qju1k"]
 [ext_resource type="PackedScene" uid="uid://yqmkpo8acvku" path="res://entity/baby-chicken.tscn" id="13_05id2"]
-[ext_resource type="Script" uid="uid://gdofqyykpl5b" path="res://assets/textures/Tileset/cameralink.gd" id="15_0nkhs"]
+[ext_resource type="Script" uid="uid://gdofqyykpl5b" path="res://cameralink.gd" id="15_0nkhs"]
 [ext_resource type="PackedScene" uid="uid://bam1avc1fkhn3" path="res://UI.tscn" id="15_om5fy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rsfob"]

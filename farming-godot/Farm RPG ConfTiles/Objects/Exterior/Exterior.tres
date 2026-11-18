@@ -39,6 +39,7 @@
 [ext_resource type="Texture2D" uid="uid://cd0yhc8cf0fpl" path="res://Farm RPG/Objects/Exterior/Wooden Broom.png" id="37_bfs26"]
 [ext_resource type="Texture2D" uid="uid://yghp8awmghkt" path="res://Farm RPG/Objects/Exterior/Wooden Buckets.png" id="38_x5275"]
 [ext_resource type="Texture2D" uid="uid://bpb862vcgfw5u" path="res://Farm RPG/Objects/Exterior/chest.png" id="39_eydtd"]
+[ext_resource type="Texture2D" uid="uid://g1bnyopnjkvy" path="res://Farm RPG/Objects/Exterior/Village Signs 2.png" id="39_paswe"]
 [ext_resource type="Texture2D" uid="uid://2ixwyjdq11rk" path="res://Farm RPG/Objects/Exterior/Construction area.png" id="40_1j21c"]
 [ext_resource type="Texture2D" uid="uid://egrarvhuncjq" path="res://Farm RPG/Objects/Exterior/Cotton candy cart.png" id="41_6cer2"]
 [ext_resource type="Texture2D" uid="uid://c3sxmueg38x6i" path="res://Farm RPG/Objects/Exterior/dog bathtub.png" id="42_emy1y"]
@@ -684,6 +685,15 @@ texture = ExtResource("38_x5275")
 0:2/0 = 0
 1:2/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3lvhw"]
+texture = ExtResource("39_paswe")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+0:3/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6uiym"]
 texture = ExtResource("39_eydtd")
 0:0/size_in_atlas = Vector2i(2, 1)
@@ -788,3 +798,4 @@ sources/39 = SubResource("TileSetAtlasSource_fqcue")
 sources/40 = SubResource("TileSetAtlasSource_yvqc8")
 sources/41 = SubResource("TileSetAtlasSource_xk0ms")
 sources/42 = SubResource("TileSetAtlasSource_c062m")
+sources/43 = SubResource("TileSetAtlasSource_3lvhw")

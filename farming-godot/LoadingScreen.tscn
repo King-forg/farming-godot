@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://c1ojcit80gisa"]
+
+[ext_resource type="Script" uid="uid://cxcxf20h3nuhb" path="res://LoadingScreen.gd" id="1_loading"]
+[ext_resource type="FontFile" uid="uid://bc8jvptmnefro" path="res://assets/PixelatedEleganceRegular-ovawB.ttf" id="2_dhqi2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tsvk1"]
+font = ExtResource("2_dhqi2")
+font_size = 28
+font_color = Color(0.81396306, 0.24113163, 4.813075e-07, 1)
+
+[node name="LoadingScreen" type="CanvasLayer" unique_id=1663031271]
+layer = 100
+script = ExtResource("1_loading")
+
+[node name="Root" type="Control" parent="." unique_id=702726509]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="ColorRect" parent="Root" unique_id=1400420240]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.04, 0.04, 0.04, 1)
+
+[node name="BottomContainer" type="Control" parent="Root" unique_id=1886032598]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -40.0
+offset_right = 180.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Root/BottomContainer" unique_id=391608033]
+custom_minimum_size = Vector2(360, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="Label" type="Label" parent="Root/BottomContainer/VBoxContainer" unique_id=1425206949]
+layout_mode = 2
+text = "Travelling........."
+label_settings = SubResource("LabelSettings_tsvk1")
+horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="Root/BottomContainer/VBoxContainer" unique_id=620399405]
+custom_minimum_size = Vector2(360, 24)
+layout_mode = 2
+max_value = 101.0
+step = 1.0

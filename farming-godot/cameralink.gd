@@ -2,7 +2,7 @@ extends MarginContainer
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
-	hide()
+	close_menu()
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("menu") and not event.is_echo():

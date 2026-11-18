@@ -14,6 +14,9 @@ config/name="farming-godot"
 run/main_scene="uid://cirds7es73agi"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 run/max_fps=60
+boot_splash/bg_color=Color(0.14117648, 0.3254902, 0.14117648, 1)
+boot_splash/show_image=false
+boot_splash/image="uid://bbsb0h3rupw7e"
 config/icon="res://assets/icon.svg"
 
 [debug]

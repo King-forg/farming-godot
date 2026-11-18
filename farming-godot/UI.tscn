@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://spqpa2bvdfk7" path="res://Farm RPG/UI/0.2.png" id="1_b3bc3"]
 [ext_resource type="Texture2D" uid="uid://jfjhpmw23ioq" path="res://Farm RPG/UI/dialogue box.png" id="2_g6l6n"]
 [ext_resource type="Texture2D" uid="uid://bja0fxyq2q5c5" path="res://Farm RPG/UI/button.png" id="2_qui0h"]
+[ext_resource type="Script" uid="uid://da3bnj66uu0hq" path="res://scenechange].gd" id="3_i1vam"]
 [ext_resource type="Script" uid="uid://birr8l23e8d8s" path="res://toggleswitch.gd" id="3_qui0h"]
 [ext_resource type="Script" uid="uid://smxm43kdl4up" path="res://resume.gd" id="3_vrfts"]
 [ext_resource type="AudioStream" uid="uid://dwarae2p51f6" path="res://assets/music/click.mp3" id="4_0mc3e"]
@@ -34,6 +35,46 @@ size_flags_horizontal = 4
 custom_minimum_size = Vector2(480, 160)
 layout_mode = 2
 size_flags_vertical = 4
+
+[node name="Light3" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer" unique_id=10411262]
+custom_minimum_size = Vector2(240, 80)
+custom_maximum_size = Vector2(240, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+texture = ExtResource("1_b3bc3")
+region_rect = Rect2(80, 0, 48, 16)
+
+[node name="Resume" type="MarginContainer" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light3" unique_id=3402276]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResumeOFF" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light3/Resume" unique_id=2095467260]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("2_qui0h")
+region_rect = Rect2(528, 208, 16, 16)
+
+[node name="ResumeON" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light3/Resume" unique_id=674661335]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("2_qui0h")
+region_rect = Rect2(544, 224, 16, 16)
+
+[node name="Button" type="Button" parent="InGameMenu/MainInGameMenu/VBoxContainer/Light3/Resume" unique_id=898550437]
+layout_mode = 2
+flat = true
+script = ExtResource("3_i1vam")
 
 [node name="Light2" type="NinePatchRect" parent="InGameMenu/MainInGameMenu/VBoxContainer" unique_id=613840665]
 custom_minimum_size = Vector2(240, 80)
