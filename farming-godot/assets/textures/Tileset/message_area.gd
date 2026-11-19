@@ -5,12 +5,21 @@ extends Area2D
 func _ready() -> void:
 	body_entered.connect(_on_body_entered)
 	body_exited.connect(_on_body_exited)
+	find_message_label()
 
+func find_message_label() -> void:
+	if message_label != null:
+		return
+
+	message_label = get_tree().get_first_node_in_group("bottom_prompt") as Label
+
+func _process(_delta: float) -> void:
 	if message_label == null:
-		message_label = get_tree().current_scene.get_node_or_null(
-			"CanvasLayer/BottomPrompt/Label"
-		) as Label
+		find_message_label()
 
+	if message_label != null and message_label.visible:
+		if Input.is_action_just_pressed("interact"):
+			get_tree().change_scene_to_file("res://house_thing.tscn")
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
