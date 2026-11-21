@@ -9,7 +9,6 @@ const HOUSE_GROUPS := [
 	"Roof",
 	"Frame",
 	"Roof2",
-	"Chimney",
 	"WindowL",
 	"WindowR",
 ]
@@ -49,6 +48,14 @@ func load_and_apply(saved_text: String = "") -> void:
 			if group != null:
 				show_variant(group, saved_index)
 
+		var chimney := get_node_or_null("Chimney") as Node2D
+		if chimney != null:
+			show_chimney_sides(
+				chimney,
+				int(data.get("ChimneyL", 0)),
+				int(data.get("ChimneyR", 0))
+			)
+
 		var door := get_node_or_null("Door") as Node2D
 		if door != null:
 			show_variant_range(
@@ -84,6 +91,33 @@ func show_variant_range(group: Node2D, index: int, range_start: int, range_end: 
 		var variant := group.get_child(variant_index)
 		if variant is CanvasItem:
 			variant.visible = variant_index - range_start == index
+
+func show_chimney_sides(group: Node2D, left_index: int, right_index: int) -> void:
+	for variant_index in group.get_child_count():
+		var variant := group.get_child(variant_index)
+		if variant is CanvasItem:
+			variant.visible = false
+
+	left_index = clampi(left_index, 0, 2)
+	right_index = clampi(right_index, 0, 2)
+
+	if left_index == 1:
+		var chimney_left := group.get_node_or_null("ChimneyL")
+		if chimney_left is CanvasItem:
+			chimney_left.visible = true
+	elif left_index == 2:
+		var chimney_left_2 := group.get_node_or_null("ChimneyL2")
+		if chimney_left_2 is CanvasItem:
+			chimney_left_2.visible = true
+
+	if right_index == 1:
+		var chimney_right := group.get_node_or_null("ChimneyR")
+		if chimney_right is CanvasItem:
+			chimney_right.visible = true
+	elif right_index == 2:
+		var chimney_right_2 := group.get_node_or_null("ChimneyR2")
+		if chimney_right_2 is CanvasItem:
+			chimney_right_2.visible = true
 
 func read_saved_text() -> String:
 	var file: FileAccess = null

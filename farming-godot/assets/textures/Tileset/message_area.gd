@@ -19,6 +19,10 @@ func _process(_delta: float) -> void:
 
 	if message_label != null and message_label.visible:
 		if Input.is_action_just_pressed("interact"):
+			var player := get_tree().get_first_node_in_group("player") as Node2D
+			if player != null:
+				GameState.player_position = player.global_position
+				GameState.has_saved_position = true
 			get_tree().change_scene_to_file("res://house_thing.tscn")
 
 func _on_body_entered(body: Node2D) -> void:

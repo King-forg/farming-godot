@@ -8,6 +8,12 @@ func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	pressed.connect(_on_pressed)
 
+func open_otherscene() -> void:
+	var player := get_tree().get_first_node_in_group("player") as Node2D
+	if player:
+		GameState.player_position = player.global_position
+		GameState.has_saved_position = true
+
 func _on_pressed() -> void:
 	if loading:
 		return
@@ -16,11 +22,12 @@ func _on_pressed() -> void:
 	if scene == "res://assets/textures/Tileset/debugmap.tscn":
 		_load_scene("res://assets/textures/Tileset/MainMap.tscn")
 	else:
+		open_otherscene()
 		_load_scene("res://assets/textures/Tileset/debugmap.tscn")
 
 func _load_scene(target_scene: String) -> void:
 	loading = true
-
+	open_otherscene()
 	get_tree().paused = false
 
 	var loading_screen := LOADING_SCREEN.instantiate()

@@ -808,7 +808,7 @@ tile_set = ExtResource("17_qy46c")
 
 [node name="HouseCamera" type="Camera2D" parent="Sprites (Y-Sorted)/Player House/Tiny House" unique_id=965507700]
 position = Vector2(-216.00002, 388.00003)
-zoom = Vector2(1.5, 1.5)
+zoom = Vector2(2, 2)
 
 [node name="Interactive Sign" type="TileMapLayer" parent="Sprites (Y-Sorted)/Player House" unique_id=445668773]
 tile_map_data = PackedByteArray("AAD1/xkAKwAAAAEAAAA=")
