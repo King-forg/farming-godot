@@ -21,7 +21,7 @@ config/icon="res://assets/icon.svg"
 
 [autoload]
 
-GameState="*uid://civmsotnf8aja"
+Globals="*uid://civmsotnf8aja"
 
 [debug]
 

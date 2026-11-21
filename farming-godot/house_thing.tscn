@@ -3,10 +3,114 @@
 [ext_resource type="Texture2D" uid="uid://e827lijvoxwa" path="res://Farm RPG/UI/Inventory/Book.png" id="1_jmgom"]
 [ext_resource type="Script" uid="uid://rfr5fsu8eto5" path="res://house-editer.gd" id="1_vdegb"]
 [ext_resource type="PackedScene" uid="uid://cy3cxb3thqe6j" path="res://assets/textures/Tileset/MainMap.tscn" id="3_4n5vi"]
+[ext_resource type="FontFile" uid="uid://bc8jvptmnefro" path="res://assets/PixelatedEleganceRegular-ovawB.ttf" id="4_awbb4"]
+[ext_resource type="Texture2D" uid="uid://bao8eq00usgjk" path="res://Farm RPG/Objects/Exterior/Houses/Tiny House.png" id="5_rim8a"]
+[ext_resource type="Script" uid="uid://c75ajgmyr3itl" path="res://change_walls.gd" id="6_rim8a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7vnwo"]
 atlas = ExtResource("1_jmgom")
 region = Rect2(1, 0, 238, 144)
+
+[sub_resource type="LabelSettings" id="LabelSettings_3om3c"]
+font = ExtResource("4_awbb4")
+font_color = Color(0.67058825, 0.4, 0.34901962, 1)
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gi35u"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(0, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awbb4"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(48, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rim8a"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(96, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvvjr"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(144, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfxr3"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(192, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n2y5w"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(240, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wjrf"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(288, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b23wv"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(336, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0n7a1"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(384, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvy33"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(432, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdf0i"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(480, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54kxk"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(528, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ygopu"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(576, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kg2w"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(624, 190, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7jr2"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(0, 254, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h6loq"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(48, 254, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etjst"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(96, 254, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4rmti"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(144, 254, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3sdn2"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(192, 254, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdmsy"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(240, 254, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vyo6q"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(288, 254, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_535xh"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(336, 254, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2blis"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(384, 254, 48, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3r314"]
+atlas = ExtResource("5_rim8a")
+region = Rect2(432, 254, 48, 49)
 
 [node name="House Thing" type="Control" unique_id=1189975252]
 layout_mode = 3
@@ -97,3 +201,187 @@ custom_minimum_size = Vector2(316.8, 390.4)
 custom_maximum_size = Vector2(316.8, 390.4)
 layout_mode = 2
 size_flags_horizontal = 8
+
+[node name="MarginContainer" type="MarginContainer" parent="Centre/Center2/Center3/Right" unique_id=1973225058]
+custom_minimum_size = Vector2(285.12, 351.36)
+custom_maximum_size = Vector2(285.12, 351.36)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Centre/Center2/Center3/Right/MarginContainer" unique_id=1470303458]
+layout_mode = 2
+
+[node name="Left" type="VBoxContainer" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer" unique_id=712286817]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Left" unique_id=1848802850]
+layout_mode = 2
+text = "Walls"
+label_settings = SubResource("LabelSettings_3om3c")
+
+[node name="OptionButton" type="OptionButton" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Left" unique_id=1800183720]
+layout_mode = 2
+selected = 0
+item_count = 24
+popup/item_0/text = "Wall 1"
+popup/item_0/icon = SubResource("AtlasTexture_gi35u")
+popup/item_0/id = 0
+popup/item_1/text = "Wall 2"
+popup/item_1/icon = SubResource("AtlasTexture_awbb4")
+popup/item_1/id = 1
+popup/item_2/text = "Wall 3"
+popup/item_2/icon = SubResource("AtlasTexture_rim8a")
+popup/item_2/id = 2
+popup/item_3/text = "Wall 4"
+popup/item_3/icon = SubResource("AtlasTexture_vvvjr")
+popup/item_3/id = 3
+popup/item_4/text = "Wall 5"
+popup/item_4/icon = SubResource("AtlasTexture_hfxr3")
+popup/item_4/id = 4
+popup/item_5/text = "Wall 6"
+popup/item_5/icon = SubResource("AtlasTexture_n2y5w")
+popup/item_5/id = 5
+popup/item_6/text = "Wall 7"
+popup/item_6/icon = SubResource("AtlasTexture_8wjrf")
+popup/item_6/id = 6
+popup/item_7/text = "Wall 8"
+popup/item_7/icon = SubResource("AtlasTexture_b23wv")
+popup/item_7/id = 7
+popup/item_8/text = "Wall 9"
+popup/item_8/icon = SubResource("AtlasTexture_0n7a1")
+popup/item_8/id = 8
+popup/item_9/text = "Wall 10"
+popup/item_9/icon = SubResource("AtlasTexture_wvy33")
+popup/item_9/id = 9
+popup/item_10/text = "Wall 11"
+popup/item_10/icon = SubResource("AtlasTexture_sdf0i")
+popup/item_10/id = 10
+popup/item_11/text = "Wall 12"
+popup/item_11/icon = SubResource("AtlasTexture_54kxk")
+popup/item_11/id = 11
+popup/item_12/text = "Wall 13"
+popup/item_12/icon = SubResource("AtlasTexture_ygopu")
+popup/item_12/id = 12
+popup/item_13/text = "Wall 14"
+popup/item_13/icon = SubResource("AtlasTexture_7kg2w")
+popup/item_13/id = 13
+popup/item_14/text = "Wall 15"
+popup/item_14/icon = SubResource("AtlasTexture_t7jr2")
+popup/item_14/id = 14
+popup/item_15/text = "Wall 16"
+popup/item_15/icon = SubResource("AtlasTexture_h6loq")
+popup/item_15/id = 15
+popup/item_16/text = "Wall 17"
+popup/item_16/icon = SubResource("AtlasTexture_etjst")
+popup/item_16/id = 16
+popup/item_17/text = "Wall 18"
+popup/item_17/icon = SubResource("AtlasTexture_4rmti")
+popup/item_17/id = 17
+popup/item_18/text = "Wall 19"
+popup/item_18/icon = SubResource("AtlasTexture_3sdn2")
+popup/item_18/id = 18
+popup/item_19/text = "Wall 20"
+popup/item_19/icon = SubResource("AtlasTexture_rdmsy")
+popup/item_19/id = 19
+popup/item_20/text = "Wall 21"
+popup/item_20/icon = SubResource("AtlasTexture_vyo6q")
+popup/item_20/id = 20
+popup/item_21/text = "Wall 22"
+popup/item_21/icon = SubResource("AtlasTexture_535xh")
+popup/item_21/id = 21
+popup/item_22/text = "Wall 23"
+popup/item_22/icon = SubResource("AtlasTexture_2blis")
+popup/item_22/id = 22
+popup/item_23/text = "Wall 24"
+popup/item_23/icon = SubResource("AtlasTexture_3r314")
+popup/item_23/id = 23
+script = ExtResource("6_rim8a")
+
+[node name="Label2" type="Label" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Left" unique_id=1291721457]
+layout_mode = 2
+text = "Frame 1"
+label_settings = SubResource("LabelSettings_3om3c")
+
+[node name="OptionButton2" type="OptionButton" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Left" unique_id=1041314013]
+layout_mode = 2
+item_count = 1
+popup/item_0/id = 0
+
+[node name="Label3" type="Label" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Left" unique_id=833825174]
+layout_mode = 2
+text = "Chimney"
+label_settings = SubResource("LabelSettings_3om3c")
+
+[node name="OptionButton3" type="OptionButton" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Left" unique_id=1014680272]
+layout_mode = 2
+item_count = 1
+popup/item_0/id = 0
+
+[node name="Label4" type="Label" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Left" unique_id=2073945914]
+layout_mode = 2
+text = "Windows L"
+label_settings = SubResource("LabelSettings_3om3c")
+
+[node name="OptionButton4" type="OptionButton" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Left" unique_id=1803953531]
+layout_mode = 2
+item_count = 1
+popup/item_0/id = 0
+
+[node name="Right" type="VBoxContainer" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer" unique_id=219556233]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Right" unique_id=2007339156]
+layout_mode = 2
+text = "Door"
+label_settings = SubResource("LabelSettings_3om3c")
+
+[node name="OptionButton" type="OptionButton" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Right" unique_id=878817661]
+layout_mode = 2
+item_count = 1
+popup/item_0/id = 0
+
+[node name="Label2" type="Label" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Right" unique_id=519253212]
+layout_mode = 2
+text = "Roof 1"
+label_settings = SubResource("LabelSettings_3om3c")
+
+[node name="OptionButton2" type="OptionButton" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Right" unique_id=491925264]
+layout_mode = 2
+item_count = 1
+popup/item_0/id = 0
+
+[node name="Label3" type="Label" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Right" unique_id=1007711188]
+layout_mode = 2
+text = "Roof 2"
+label_settings = SubResource("LabelSettings_3om3c")
+
+[node name="OptionButton3" type="OptionButton" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Right" unique_id=925970736]
+layout_mode = 2
+item_count = 1
+popup/item_0/id = 0
+
+[node name="Label4" type="Label" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Right" unique_id=817637042]
+layout_mode = 2
+text = "Windows R"
+label_settings = SubResource("LabelSettings_3om3c")
+
+[node name="OptionButton4" type="OptionButton" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Right" unique_id=1492806851]
+layout_mode = 2
+item_count = 1
+popup/item_0/id = 0
+
+[node name="Label5" type="Label" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Right" unique_id=817637053]
+layout_mode = 2
+text = "Stairs"
+label_settings = SubResource("LabelSettings_3om3c")
+
+[node name="OptionButton5" type="OptionButton" parent="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Right" unique_id=1492806852]
+layout_mode = 2
+item_count = 2
+popup/item_0/text = "Stairs 1"
+popup/item_0/id = 0
+popup/item_1/text = "Stairs 2"
+popup/item_1/id = 1
+
+[connection signal="item_selected" from="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Left/OptionButton" to="Centre/Center2/Center3/Right/MarginContainer/HBoxContainer/Left/OptionButton" method="_on_item_selected"]
