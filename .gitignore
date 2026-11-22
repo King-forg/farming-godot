@@ -37,21 +37,6 @@ mono_crash.*.json
 # Build & Export Outputs
 # ==========================================
 
-builds/
-**/builds/
-export/
-**/export/
-*.pck
-*.exe
-*.x86_64
-*.arm64
-*.apk
-*.aab
-*.dmg
-*.app/
-*.zip
-*.tar.gz
-
 # ==========================================
 # OS & Editor Files
 # ==========================================
