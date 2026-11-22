@@ -5,7 +5,7 @@
 | ------------------- | ------- |
 | Movement            | WASD    |
 | Menu                | F       |
-| | |
+| Interact            | E       |
 
  # The start of a cool farming game! Credits are below.
  
@@ -15,6 +15,14 @@ Includes:
  - GUI
  - Pause Menu with buttons
  - Directional character movement
+ - Randomly moving animals
+ - Animated player and animals
+ - Music
+ - Textures that work well
+ - Custom house
+ - Collisions on new map
+ - SFX for footsteps
+ - footsteps change speed based on speed of player
 
 
 # Running
