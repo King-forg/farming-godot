@@ -42,6 +42,10 @@ func load_and_apply(saved_text: String = "") -> void:
 
 	var data = JSON.parse_string(saved_text)
 	if data is Dictionary:
+		var shadow := get_node_or_null("../Shadow") as CanvasItem
+		if shadow != null:
+			shadow.visible = true
+
 		for group_name: String in HOUSE_GROUPS:
 			var saved_index := int(data.get(group_name, 0))
 			var group := get_node_or_null(group_name) as Node2D
@@ -93,31 +97,32 @@ func show_variant_range(group: Node2D, index: int, range_start: int, range_end: 
 			variant.visible = variant_index - range_start == index
 
 func show_chimney_sides(group: Node2D, left_index: int, right_index: int) -> void:
-	for variant_index in group.get_child_count():
-		var variant := group.get_child(variant_index)
-		if variant is CanvasItem:
-			variant.visible = false
-
 	left_index = clampi(left_index, 0, 2)
 	right_index = clampi(right_index, 0, 2)
 
-	if left_index == 1:
-		var chimney_left := group.get_node_or_null("ChimneyL")
-		if chimney_left is CanvasItem:
-			chimney_left.visible = true
-	elif left_index == 2:
-		var chimney_left_2 := group.get_node_or_null("ChimneyL2")
-		if chimney_left_2 is CanvasItem:
-			chimney_left_2.visible = true
+	var chimney_left := group.get_node_or_null("ChimneyL") as CanvasItem
+	var chimney_left_2 := group.get_node_or_null("ChimneyL2") as CanvasItem
+	var chimney_right := group.get_node_or_null("ChimneyR") as CanvasItem
+	var chimney_right_2 := group.get_node_or_null("ChimneyR2") as CanvasItem
 
-	if right_index == 1:
-		var chimney_right := group.get_node_or_null("ChimneyR")
-		if chimney_right is CanvasItem:
-			chimney_right.visible = true
-	elif right_index == 2:
-		var chimney_right_2 := group.get_node_or_null("ChimneyR2")
-		if chimney_right_2 is CanvasItem:
-			chimney_right_2.visible = true
+	if chimney_left != null:
+		chimney_left.visible = false
+	if chimney_left_2 != null:
+		chimney_left_2.visible = false
+	if chimney_right != null:
+		chimney_right.visible = false
+	if chimney_right_2 != null:
+		chimney_right_2.visible = false
+
+	if left_index == 1 and chimney_left != null:
+		chimney_left.visible = true
+	elif left_index == 2 and chimney_left_2 != null:
+		chimney_left_2.visible = true
+
+	if right_index == 1 and chimney_right != null:
+		chimney_right.visible = true
+	elif right_index == 2 and chimney_right_2 != null:
+		chimney_right_2.visible = true
 
 func read_saved_text() -> String:
 	var file: FileAccess = null

@@ -13,6 +13,9 @@ func open_otherscene() -> void:
 	if player:
 		GameState.player_position = player.global_position
 		GameState.has_saved_position = true
+		var camera := get_viewport().get_camera_2d()
+		if camera != null:
+			GameState.camera_position = camera.global_position
 
 func _on_pressed() -> void:
 	if loading:

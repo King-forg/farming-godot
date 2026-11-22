@@ -23,6 +23,9 @@ func _process(_delta: float) -> void:
 			if player != null:
 				GameState.player_position = player.global_position
 				GameState.has_saved_position = true
+				var camera := get_viewport().get_camera_2d()
+				if camera != null:
+					GameState.camera_position = camera.global_position
 			get_tree().change_scene_to_file("res://house_thing.tscn")
 
 func _on_body_entered(body: Node2D) -> void:
