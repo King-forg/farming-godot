@@ -1,10 +1,10 @@
 [gd_resource type="TileSet" format=3 uid="uid://cy347wxjd5h55"]
 
-[ext_resource type="Texture2D" uid="uid://e63uni1ej6y" path="res://assets/textures/Tileset/Tileset Grass Spring.png" id="1_eo1ey"]
-[ext_resource type="Texture2D" uid="uid://xvgmifuam84x" path="res://assets/textures/Objects/Spring Crops.png" id="2_12c7x"]
-[ext_resource type="Texture2D" uid="uid://cdd73ucx8tb8c" path="res://assets/textures/Objects/Road copiar.png" id="3_jq284"]
-[ext_resource type="Texture2D" uid="uid://cy8ciuk056l1b" path="res://assets/textures/Objects/Fence's copiar.png" id="4_cvfoh"]
-[ext_resource type="Texture2D" uid="uid://nbl1bbw3kry0" path="res://assets/textures/Objects/Interior.png" id="5_3piao"]
+[ext_resource type="Texture2D" uid="uid://b7pixw2hta7jh" path="res://assets/textures/Tileset/Tileset Grass Spring.png" id="1_eo1ey"]
+[ext_resource type="Texture2D" uid="uid://teff5pppl6t" path="res://assets/textures/Objects/Spring Crops.png" id="2_12c7x"]
+[ext_resource type="Texture2D" uid="uid://dg06yyvysdb1m" path="res://assets/textures/Objects/Road copiar.png" id="3_jq284"]
+[ext_resource type="Texture2D" uid="uid://cg72jr8pwgdua" path="res://assets/textures/Objects/Fence's copiar.png" id="4_cvfoh"]
+[ext_resource type="Texture2D" uid="uid://opv6d18dj8md" path="res://assets/textures/Objects/Interior.png" id="5_3piao"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_68mkx"]
 texture = ExtResource("1_eo1ey")
