@@ -1,0 +1,182 @@
+[gd_scene format=3 uid="uid://dcx3lbuqtjscs"]
+
+[ext_resource type="Texture2D" uid="uid://w114t4b886so" path="res://Farm RPG/UI/Inventory/Slots.png" id="1_foms5"]
+[ext_resource type="Texture2D" uid="uid://dugmv80ryahvu" path="res://Farm RPG/UI/Bars.png" id="2_ekhde"]
+[ext_resource type="Script" uid="uid://bik4xjxaj5xs6" path="res://health.gd" id="2_lueaw"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lueaw"]
+load_path = "res://.godot/imported/Bars.png-1e6a1e09f64ea31899e4ce8c5a558107.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3om3c"]
+atlas = ExtResource("2_ekhde")
+region = Rect2(51, 4, 10, 8)
+
+[node name="Main" type="Control" unique_id=827415956]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=885625590]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Inner Hotbar" type="MarginContainer" parent="MarginContainer" unique_id=256508739]
+custom_minimum_size = Vector2(412.5, 70)
+custom_maximum_size = Vector2(412.5, 70)
+layout_mode = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/Inner Hotbar" unique_id=2015656571]
+layout_mode = 2
+texture = ExtResource("1_foms5")
+region_rect = Rect2(6, 249, 165, 28)
+
+[node name="Health" type="MarginContainer" parent="MarginContainer" unique_id=220085877]
+custom_minimum_size = Vector2(50, 210)
+custom_maximum_size = Vector2(50, 210)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+
+[node name="Health" type="MarginContainer" parent="MarginContainer/Health" unique_id=996556581]
+layout_mode = 2
+script = ExtResource("2_lueaw")
+
+[node name="Bar" type="NinePatchRect" parent="MarginContainer/Health/Health" unique_id=808205695]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_lueaw")
+region_rect = Rect2(99, 51, 10, 42)
+
+[node name="BarVal" type="MarginContainer" parent="MarginContainer/Health/Health/Bar" unique_id=1698193084]
+custom_minimum_size = Vector2(15, 140)
+custom_maximum_size = Vector2(15, 140)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.0
+offset_top = -45.0
+offset_right = 10.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="100" type="NinePatchRect" parent="MarginContainer/Health/Health/Bar/BarVal" unique_id=1850503611]
+custom_minimum_size = Vector2(0, 140)
+custom_maximum_size = Vector2(-1, 140)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(119, 63, 3, 27)
+
+[node name="90" type="NinePatchRect" parent="MarginContainer/Health/Health/Bar/BarVal" unique_id=1553400501]
+custom_minimum_size = Vector2(0, 129.6)
+custom_maximum_size = Vector2(-1, 129.6)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(119, 65, 3, 25)
+
+[node name="80" type="NinePatchRect" parent="MarginContainer/Health/Health/Bar/BarVal" unique_id=339936411]
+custom_minimum_size = Vector2(0, 114)
+custom_maximum_size = Vector2(-1, 114)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(119, 68, 3, 22)
+
+[node name="70" type="NinePatchRect" parent="MarginContainer/Health/Health/Bar/BarVal" unique_id=2035222943]
+custom_minimum_size = Vector2(0, 103.7)
+custom_maximum_size = Vector2(-1, 103.7)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(119, 70, 3, 20)
+
+[node name="60" type="NinePatchRect" parent="MarginContainer/Health/Health/Bar/BarVal" unique_id=1465018001]
+custom_minimum_size = Vector2(0, 88.1)
+custom_maximum_size = Vector2(-1, 88.1)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(119, 73, 3, 17)
+
+[node name="50" type="NinePatchRect" parent="MarginContainer/Health/Health/Bar/BarVal" unique_id=70831991]
+custom_minimum_size = Vector2(0, 72.6)
+custom_maximum_size = Vector2(-1, 72.6)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(119, 76, 3, 14)
+
+[node name="40" type="NinePatchRect" parent="MarginContainer/Health/Health/Bar/BarVal" unique_id=500804215]
+custom_minimum_size = Vector2(0, 62.2)
+custom_maximum_size = Vector2(-1, 62.2)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(119, 78, 3, 12)
+
+[node name="30" type="NinePatchRect" parent="MarginContainer/Health/Health/Bar/BarVal" unique_id=1916120819]
+custom_minimum_size = Vector2(0, 46.6)
+custom_maximum_size = Vector2(-1, 46.6)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(119, 81, 3, 9)
+
+[node name="20" type="NinePatchRect" parent="MarginContainer/Health/Health/Bar/BarVal" unique_id=732102711]
+custom_minimum_size = Vector2(0, 36.3)
+custom_maximum_size = Vector2(-1, 36.3)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(119, 81, 3, 7)
+
+[node name="10" type="NinePatchRect" parent="MarginContainer/Health/Health/Bar/BarVal" unique_id=1646157579]
+custom_minimum_size = Vector2(0, 25.9)
+custom_maximum_size = Vector2(-1, 25.9)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(119, 85, 3, 5)
+
+[node name="0" type="NinePatchRect" parent="MarginContainer/Health/Health/Bar/BarVal" unique_id=1929049377]
+custom_minimum_size = Vector2(0, 5.2)
+custom_maximum_size = Vector2(-1, 5.2)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(119, 89, 3, 1)
+
+[node name="Hearts" type="MarginContainer" parent="MarginContainer/Health/Health" unique_id=1505215666]
+custom_minimum_size = Vector2(0, 50)
+custom_maximum_size = Vector2(-1, 50)
+layout_mode = 2
+
+[node name="Full" type="NinePatchRect" parent="MarginContainer/Health/Health/Hearts" unique_id=1111285015]
+layout_mode = 2
+texture = SubResource("AtlasTexture_3om3c")
+
+[node name="Half" type="NinePatchRect" parent="MarginContainer/Health/Health/Hearts" unique_id=1303677524]
+layout_mode = 2
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(67, 4, 10, 8)
+
+[node name="Empty" type="NinePatchRect" parent="MarginContainer/Health/Health/Hearts" unique_id=1525475946]
+layout_mode = 2
+texture = ExtResource("2_ekhde")
+region_rect = Rect2(83, 4, 10, 8)
