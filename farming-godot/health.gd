@@ -5,17 +5,17 @@ const SAVE_PATH := "user://userinfo.json"
 var newhealth: int
 var health: int
 
-@onready var health10 = get_node("Health/Health/Bar/BarVal/100")
-@onready var health9 = get_node("Health/Health/Bar/BarVal/90")
-@onready var health8 = get_node("Health/Health/Bar/BarVal/80")
-@onready var health7 = get_node("Health/Health/Bar/BarVal/70")
-@onready var health6 = get_node("Health/Health/Bar/BarVal/60")
-@onready var health5 = get_node("Health/Health/Bar/BarVal/50")
-@onready var health4 = get_node("Health/Health/Bar/BarVal/40")
-@onready var health3 = get_node("Health/Health/Bar/BarVal/30")
-@onready var health2 = get_node("Health/Health/Bar/BarVal/20")
-@onready var health1 = get_node("Health/Health/Bar/BarVal/10")
-@onready var health0 = get_node("Health/Health/Bar/BarVal/0")
+@onready var health10 = get_node("Bar/BarVal/100")
+@onready var health9 = get_node("Bar/BarVal/90")
+@onready var health8 = get_node("Bar/BarVal/80")
+@onready var health7 = get_node("Bar/BarVal/70")
+@onready var health6 = get_node("Bar/BarVal/60")
+@onready var health5 = get_node("Bar/BarVal/50")
+@onready var health4 = get_node("Bar/BarVal/40")
+@onready var health3 = get_node("Bar/BarVal/30")
+@onready var health2 = get_node("Bar/BarVal/20")
+@onready var health1 = get_node("Bar/BarVal/10")
+@onready var health0 = get_node("Bar/BarVal/0")
 
 func _ready() -> void:
 	fileread()
