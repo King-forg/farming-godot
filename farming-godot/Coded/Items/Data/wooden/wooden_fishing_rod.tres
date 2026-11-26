@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://gdma4kjt0ok2"]
+
+[ext_resource type="Texture2D" uid="uid://edafwt4xol6u" path="res://Farm RPG/Icons/RPG icons/Weapons and Armor/1. Wood/Fishing Rod.png" id="1_041kl"]
+[ext_resource type="Script" uid="uid://ditu7gkwd5jex" path="res://Coded/Items/Scripts/itemdata.gd" id="1_hxkor"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_041kl"]
+atlas = ExtResource("1_041kl")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bapsk"]
+atlas = ExtResource("1_041kl")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_hxkor")
+item_id = "wooden_fishing_rod"
+item_name = "Wooden Fishing Rod"
+description = "Catches some fish!"
+icon = SubResource("AtlasTexture_041kl")
+selected_icon = SubResource("AtlasTexture_bapsk")
+max_stack = 1
+metadata/_custom_type_script = "uid://ditu7gkwd5jex"

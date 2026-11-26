@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dilrfo1db1fgg"]
+
+[ext_resource type="Script" uid="uid://ditu7gkwd5jex" path="res://Coded/Items/Scripts/itemdata.gd" id="1_drl3s"]
+[ext_resource type="Texture2D" uid="uid://dqqevpjiya0vl" path="res://Farm RPG/Icons/RPG icons/Weapons and Armor/1. Wood/Boots.png" id="1_e80hv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e80hv"]
+atlas = ExtResource("1_e80hv")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3y6mm"]
+atlas = ExtResource("1_e80hv")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_drl3s")
+item_id = "wooden_boots"
+item_name = "Wooden Boots"
+description = "Clogs for everyone!"
+icon = SubResource("AtlasTexture_e80hv")
+selected_icon = SubResource("AtlasTexture_3y6mm")
+max_stack = 1
+metadata/_custom_type_script = "uid://ditu7gkwd5jex"

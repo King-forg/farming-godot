@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://doqmwpa2uviac"]
+
+[ext_resource type="Texture2D" uid="uid://df0k0pch8hssg" path="res://Farm RPG/Icons/RPG icons/Weapons and Armor/1. Wood/Shovel.png" id="1_g6env"]
+[ext_resource type="Script" uid="uid://ditu7gkwd5jex" path="res://Coded/Items/Scripts/itemdata.gd" id="1_qadig"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6env"]
+atlas = ExtResource("1_g6env")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bgy67"]
+atlas = ExtResource("1_g6env")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_qadig")
+item_id = "wooden_shovel"
+item_name = "Wooden Shovel"
+description = "The basic way of ripping the earth apart"
+icon = SubResource("AtlasTexture_g6env")
+selected_icon = SubResource("AtlasTexture_bgy67")
+max_stack = 1
+metadata/_custom_type_script = "uid://ditu7gkwd5jex"

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cpq35jr0okamo"]
+
+[ext_resource type="Script" uid="uid://ditu7gkwd5jex" path="res://Coded/Items/Scripts/itemdata.gd" id="1_djxe0"]
+[ext_resource type="Texture2D" uid="uid://bs51dyp6fjmex" path="res://Farm RPG/Icons/RPG icons/Weapons and Armor/1. Wood/Staff.png" id="1_ibmvm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibmvm"]
+atlas = ExtResource("1_ibmvm")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmyrr"]
+atlas = ExtResource("1_ibmvm")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_djxe0")
+item_id = "wooden_staff"
+item_name = "Wooden Staff"
+description = "YOU SHALL NOT PASS"
+icon = SubResource("AtlasTexture_ibmvm")
+selected_icon = SubResource("AtlasTexture_hmyrr")
+max_stack = 1
+metadata/_custom_type_script = "uid://ditu7gkwd5jex"

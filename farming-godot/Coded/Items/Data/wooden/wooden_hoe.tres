@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cj32c8w8snrxp"]
+
+[ext_resource type="Texture2D" uid="uid://d2nexb7fuw4i0" path="res://Farm RPG/Icons/RPG icons/Weapons and Armor/1. Wood/Hoe.png" id="1_n8ivb"]
+[ext_resource type="Script" uid="uid://ditu7gkwd5jex" path="res://Coded/Items/Scripts/itemdata.gd" id="1_v6a0a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8ivb"]
+atlas = ExtResource("1_n8ivb")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v6a0a"]
+atlas = ExtResource("1_n8ivb")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_v6a0a")
+item_id = "wooden_hoe"
+item_name = "Wooden Hoe"
+description = "All your basic farming needs are met here!"
+icon = SubResource("AtlasTexture_n8ivb")
+selected_icon = SubResource("AtlasTexture_v6a0a")
+max_stack = 1
+metadata/_custom_type_script = "uid://ditu7gkwd5jex"

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://0ssmql3j3a2y"]
+
+[ext_resource type="Script" uid="uid://ditu7gkwd5jex" path="res://Coded/Items/Scripts/itemdata.gd" id="1_ju7n1"]
+[ext_resource type="Texture2D" uid="uid://bb2jyjdw5gafi" path="res://Farm RPG/Icons/RPG icons/Weapons and Armor/1. Wood/Watering can.png" id="1_sodox"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sodox"]
+atlas = ExtResource("1_sodox")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nj4ic"]
+atlas = ExtResource("1_sodox")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_ju7n1")
+item_id = "wooden_watering_can"
+item_name = "Wooden Watering Can"
+description = "Sprinkles water over your crops!"
+icon = SubResource("AtlasTexture_sodox")
+selected_icon = SubResource("AtlasTexture_nj4ic")
+max_stack = 1
+metadata/_custom_type_script = "uid://ditu7gkwd5jex"

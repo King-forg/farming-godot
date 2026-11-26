@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://uasnxo0dbkyu"]
+
+[ext_resource type="Script" uid="uid://ba2mweig0shl8" path="res://entity/timer.gd" id="1_voclg"]
+[ext_resource type="Texture2D" uid="uid://1e4e2g4bsb80" path="res://Farm RPG/Animals/Forest/Fox/Red Fox.png" id="2_gn8at"]
+[ext_resource type="Script" uid="uid://c2lqir8ppbtky" path="res://entity/character_animation.gd" id="3_i8nyw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7vnwo"]
+size = Vector2(13, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c353f"]
+atlas = ExtResource("2_gn8at")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1eto7"]
+atlas = ExtResource("2_gn8at")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76nfk"]
+atlas = ExtResource("2_gn8at")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0byqe"]
+atlas = ExtResource("2_gn8at")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3om3c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c353f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1eto7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76nfk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0byqe")
+}],
+"loop": 1,
+"name": &"walk-down",
+"speed": 5.0
+}]
+
+[node name="red-fox" type="CharacterBody2D" unique_id=2000823430]
+script = ExtResource("1_voclg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=681919222]
+position = Vector2(-0.5, -5)
+shape = SubResource("RectangleShape2D_7vnwo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=665570869]
+position = Vector2(0, -14)
+sprite_frames = SubResource("SpriteFrames_3om3c")
+animation = &"walk-down"
+frame = 1
+frame_progress = 0.94063336
+script = ExtResource("3_i8nyw")
+
+[node name="Timer" type="Timer" parent="." unique_id=1321857798]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

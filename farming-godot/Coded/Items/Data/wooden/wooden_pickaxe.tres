@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://c5th2et6idvi1"]
+
+[ext_resource type="Texture2D" uid="uid://clfwhgu61dmic" path="res://Farm RPG/Icons/RPG icons/Weapons and Armor/1. Wood/Pickaxe.png" id="1_w8cbt"]
+[ext_resource type="Script" uid="uid://ditu7gkwd5jex" path="res://Coded/Items/Scripts/itemdata.gd" id="2_d0aou"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh2wp"]
+atlas = ExtResource("1_w8cbt")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8y0e"]
+atlas = ExtResource("1_w8cbt")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("2_d0aou")
+item_id = "wooden_pickaxe"
+item_name = "Wooden Pickaxe"
+description = "Wood you pick this axe?"
+icon = SubResource("AtlasTexture_sh2wp")
+selected_icon = SubResource("AtlasTexture_g8y0e")
+max_stack = 1
+metadata/_custom_type_script = "uid://ditu7gkwd5jex"

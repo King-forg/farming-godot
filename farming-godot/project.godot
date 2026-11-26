@@ -39,12 +39,23 @@ window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
-window/stretch/scale=1.5
+window/stretch/scale=2.0
 window/vsync/vsync_mode=0
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/YATI/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://Coded/": "red",
+"res://Farm RPG ConfTiles/": "teal",
+"res://Farm RPG/": "teal",
+"res://addons/": "gray",
+"res://assets/": "orange",
+"res://entity/": "green"
+}
 
 [gui]
 

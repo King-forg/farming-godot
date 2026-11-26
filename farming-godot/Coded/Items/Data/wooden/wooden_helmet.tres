@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bsdq57ceja7nc"]
+
+[ext_resource type="Script" uid="uid://ditu7gkwd5jex" path="res://Coded/Items/Scripts/itemdata.gd" id="1_0ovw2"]
+[ext_resource type="Texture2D" uid="uid://uc7cgjs35kdq" path="res://Farm RPG/Icons/RPG icons/Weapons and Armor/1. Wood/Helmet.png" id="1_t4nwc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4nwc"]
+atlas = ExtResource("1_t4nwc")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgwwr"]
+atlas = ExtResource("1_t4nwc")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_0ovw2")
+item_id = "wooden_helmet"
+item_name = "Wooden Helmet"
+description = "Hey dude check out my new hat!"
+icon = SubResource("AtlasTexture_t4nwc")
+selected_icon = SubResource("AtlasTexture_lgwwr")
+max_stack = 1
+metadata/_custom_type_script = "uid://ditu7gkwd5jex"

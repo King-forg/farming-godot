@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dp6vuqpoy2c4j"]
+
+[ext_resource type="Script" uid="uid://dv7qdypbv7hk6" path="res://Coded/Items/Scripts/Inventoryslot.gd" id="1_ur70i"]
+[ext_resource type="Resource" uid="uid://pmfuf0mmg6xv" path="res://Coded/Items/Data/Apple.tres" id="2_67afb"]
+
+[node name="InventorySlot" type="TextureRect" unique_id=1895761759]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ur70i")
+item_data = ExtResource("2_67afb")

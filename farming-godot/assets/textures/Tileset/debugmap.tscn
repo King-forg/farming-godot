@@ -11,11 +11,11 @@
 [ext_resource type="PackedScene" uid="uid://4tkckmhgn3sm" path="res://entity/male_cow.tscn" id="8_jcr48"]
 [ext_resource type="PackedScene" uid="uid://c6w6lpo6va2xy" path="res://entity/female_cow.tscn" id="9_c7b7r"]
 [ext_resource type="PackedScene" uid="uid://b4ajxcpxqmyxq" path="res://entity/spicy_chicken.tscn" id="10_u7riy"]
-[ext_resource type="PackedScene" uid="uid://c08x4qqgiik1x" path="res://Player.tscn" id="11_0oe3f"]
+[ext_resource type="PackedScene" uid="uid://c08x4qqgiik1x" path="res://Coded/tscn_scenes/Player.tscn" id="11_0oe3f"]
 [ext_resource type="PackedScene" uid="uid://cm4ssfnick67f" path="res://entity/Chicken.tscn" id="12_qju1k"]
 [ext_resource type="PackedScene" uid="uid://yqmkpo8acvku" path="res://entity/baby-chicken.tscn" id="13_05id2"]
-[ext_resource type="Script" uid="uid://gdofqyykpl5b" path="res://cameralink.gd" id="15_0nkhs"]
-[ext_resource type="PackedScene" uid="uid://bam1avc1fkhn3" path="res://UI.tscn" id="15_om5fy"]
+[ext_resource type="Script" uid="uid://gdofqyykpl5b" path="res://Coded/Camera/cameralink.gd" id="15_0nkhs"]
+[ext_resource type="PackedScene" uid="uid://bam1avc1fkhn3" path="res://Coded/tscn_scenes/UI.tscn" id="15_om5fy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rsfob"]
 texture = ExtResource("3_om5fy")

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://pmfuf0mmg6xv"]
+
+[ext_resource type="Script" uid="uid://ditu7gkwd5jex" path="res://Coded/Items/Scripts/itemdata.gd" id="1_2xaxf"]
+[ext_resource type="Texture2D" uid="uid://0xb6pc0jdxsa" path="res://Farm RPG/Icons/Food Icons/Apple.png" id="1_43t4j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43t4j"]
+atlas = ExtResource("1_43t4j")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xb6pb"]
+atlas = ExtResource("1_43t4j")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_2xaxf")
+item_id = "apple"
+item_name = "Apple"
+description = "A freshly picked apple"
+icon = SubResource("AtlasTexture_43t4j")
+selected_icon = SubResource("AtlasTexture_xb6pb")
+max_stack = 16
+metadata/_custom_type_script = "uid://ditu7gkwd5jex"

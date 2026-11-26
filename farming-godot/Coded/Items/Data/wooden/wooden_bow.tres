@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bk2wjtsb7qgwo"]
+
+[ext_resource type="Texture2D" uid="uid://boyr6nffl0pi1" path="res://Farm RPG/Icons/RPG icons/Weapons and Armor/1. Wood/Bow.png" id="1_i2sy5"]
+[ext_resource type="Script" uid="uid://ditu7gkwd5jex" path="res://Coded/Items/Scripts/itemdata.gd" id="1_lvq72"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2sy5"]
+atlas = ExtResource("1_i2sy5")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qf56"]
+atlas = ExtResource("1_i2sy5")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_lvq72")
+item_id = "wooden_bow"
+item_name = "Wooden Bow"
+description = "A really inaccurate way of shooting arrows at someone"
+icon = SubResource("AtlasTexture_i2sy5")
+selected_icon = SubResource("AtlasTexture_2qf56")
+max_stack = 1
+metadata/_custom_type_script = "uid://ditu7gkwd5jex"

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dgogmg27f4p1q"]
+
+[ext_resource type="Texture2D" uid="uid://cagb6oaccb7na" path="res://Farm RPG/Icons/RPG icons/Weapons and Armor/1. Wood/Sickle.png" id="1_7hlm4"]
+[ext_resource type="Script" uid="uid://ditu7gkwd5jex" path="res://Coded/Items/Scripts/itemdata.gd" id="2_yah86"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sf85w"]
+atlas = ExtResource("1_7hlm4")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4k7a"]
+atlas = ExtResource("1_7hlm4")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("2_yah86")
+item_id = "wooden_sickle"
+item_name = "Wooden Sickle"
+description = "Cuts through grown crops, but not well"
+icon = SubResource("AtlasTexture_sf85w")
+selected_icon = SubResource("AtlasTexture_r4k7a")
+max_stack = 1
+metadata/_custom_type_script = "uid://ditu7gkwd5jex"

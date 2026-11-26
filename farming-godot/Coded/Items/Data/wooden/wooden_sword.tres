@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bshlh5xnpaujr"]
+
+[ext_resource type="Texture2D" uid="uid://cj6d68cv7nyqv" path="res://Farm RPG/Icons/RPG icons/Weapons and Armor/1. Wood/Sword.png" id="1_tymf3"]
+[ext_resource type="Script" uid="uid://ditu7gkwd5jex" path="res://Coded/Items/Scripts/itemdata.gd" id="2_q1kex"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p738l"]
+atlas = ExtResource("1_tymf3")
+region = Rect2(0, 0, 16, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oxye0"]
+atlas = ExtResource("1_tymf3")
+region = Rect2(16, 0, 16, 16)
+filter_clip = true
+
+[resource]
+script = ExtResource("2_q1kex")
+item_id = "wooden_sword"
+item_name = "Wooden Sword"
+description = "The most basic of the defences"
+icon = SubResource("AtlasTexture_p738l")
+selected_icon = SubResource("AtlasTexture_oxye0")
+max_stack = 1
+metadata/_custom_type_script = "uid://ditu7gkwd5jex"
