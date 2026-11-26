@@ -43,7 +43,7 @@ I created this using godot and also used the assets from the credits in credit.t
 # Running
 It is on itch.io
  - https://kingforg.itch.io/farming
- - Newer version is on farming.kingf.org. I plan on changing settings on it so that it will run better and smoother for different aspect ratios and also should have a start menu.
+ - Newer version is on https://farming.kingf.org. I plan on changing settings on it so that it will run better and smoother for different aspect ratios and also should have a start menu.
 
 
 Other credits are in the credit.txt file.
