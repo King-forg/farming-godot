@@ -10,6 +10,8 @@
  # The start of a cool farming game! Credits are below.
 
 Schedule:
+ | Week   | Desc                                         | Status   |
+ |--------|----------------------------------------------|----------|
  | Week 1 | Port it over and create some basic functions | Complete |
  | Week 2 | Create custom house and sfx with a new map   | Complete |
  | Week 3 | Create a fully functioning                   | WIP      |
