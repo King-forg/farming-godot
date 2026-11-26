@@ -9,6 +9,9 @@
 
  # The start of a cool farming game! Credits are below.
 
+![End of week 2](https://farming.web.kingf.org/assets/week-2/06.png)
+
+
 Schedule:
  | Week   | Desc                                         | Status   |
  |--------|----------------------------------------------|----------|
